@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Từ khoá"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:id="@+id/txttukhoa"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="10dp"
+        android:hint="Số công văn, trích yếu"
+        android:background="@drawable/backgroudedit"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Ngày cập nhật" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        >
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/capnhatdi"
+            android:layout_width="135dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/backgroudedit"
+            android:hint="Từ ngày"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/capnhatden"
+            android:paddingLeft="10dp"
+            android:layout_width="135dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/backgroudedit"
+            android:hint="Đến ngày"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Ngày công văn" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <EditText
+            android:id="@+id/congvandi"
+            android:paddingLeft="10dp"
+            android:layout_width="135dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/backgroudedit"
+            android:hint="Từ ngày"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/congvanden"
+            android:paddingLeft="10dp"
+            android:layout_width="135dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/backgroudedit"
+            android:hint="Đến ngày"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Trình lãnh đạo" />
+        <Spinner
+            android:id="@+id/trinhlanhdao"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="Nơi gửi" />
+        <Spinner
+            android:id="@+id/noigui"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <EditText
+            android:id="@+id/noiguikhac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:hint="Nhập nơi gửi khác"
+            android:background="@drawable/backgroudedit"
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btntimkiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Tìm kiếm"
+            android:background="#17f385"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
